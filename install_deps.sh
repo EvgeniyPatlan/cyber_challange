@@ -10,7 +10,7 @@ fi
 apt-get update && apt-get upgrade -y
 
 # Install Docker
-#apt-get install -y docker.io
+#apt-get install -y docker.io git
 
 # Add the current user to the Docker group
 #usermod -aG docker $SUDO_USER
@@ -31,3 +31,6 @@ echo "Setup is complete. A reboot is recommended."
 
 # Uncomment the following line to automatically reboot
 # reboot
+git clone https://github.com/EvgeniyPatlan/cyber_challange.git
+cd cyber_challange.git
+vagrant up;vagrant plugin install vagrant-vbguest; vagrant up
