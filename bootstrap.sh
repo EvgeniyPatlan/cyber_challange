@@ -61,7 +61,7 @@ systemctl enable firewalld
 firewall-cmd --zone=public --add-service=http --permanent
 firewall-cmd --zone=public --add-port=2024/tcp --permanent
 firewall-cmd --reload
-
+sudo setenforce 0
 # Configure SSH to listen on specified ports
 echo -e "Port 22\nPort 2222\nPort 2000\nPort 2024\nPort 2022\nPort 1022" >> /etc/ssh/sshd_config
 # Restart SSHD to apply configuration
