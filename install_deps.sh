@@ -32,5 +32,5 @@ echo "Setup is complete. A reboot is recommended."
 # Uncomment the following line to automatically reboot
 # reboot
 git clone https://github.com/EvgeniyPatlan/cyber_challange.git
-cd cyber_challange.git
+cd cyber_challange
 vagrant up;vagrant plugin install vagrant-vbguest; vagrant up
